@@ -89,3 +89,18 @@ or `KafkaNotificationConsumerTest` for testing consumer side, with `@SpringBootT
     ```
 12. ???
 13. Profit! You can test whatever you want!
+14. Config:
+    ```
+      kafka:
+        bootstrap-servers: localhost:9092
+        consumer:
+          bootstrap-servers: localhost:9092
+          group-id: appointment
+          auto-offset-reset: earliest
+          key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+          value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        producer:
+          bootstrap-servers: localhost:9092
+          key-serializer: org.apache.kafka.common.serialization.StringSerializer
+          value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    ```
