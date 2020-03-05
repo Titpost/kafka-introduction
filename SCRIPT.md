@@ -2,7 +2,7 @@
 Slides: https://docs.google.com/presentation/d/17yAIQ61tyHV5oEF7tCss-YRKuYmanr70nKtxRzoudFM/edit?usp=sharing 
 
 
-#Step-by-step:
+# Step-by-step:
 1. Dependencies
 
         implementation 'org.springframework.kafka:spring-kafka'
